@@ -8,7 +8,7 @@ namespace StudyHelper.WebUI.Models
 {
     public class Course
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        
         public int CourseID { get; set; }
         public string CourseName { get; set; }
         public string CourseDescription { get; set; }

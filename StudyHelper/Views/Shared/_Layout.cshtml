@@ -16,16 +16,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <img src="~/Images/studyhelperbackground.png" class="img-center" height="50" width="50" />
                 @Html.ActionLink("Study Helper", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Students", "Index", "Student")</li>
+                    <li>@Html.ActionLink("Create Account", "Index", "Create an Account")</li>
+                    <li>@Html.ActionLink("Login", "Index", "Login")</li>
                     <li>@Html.ActionLink("Courses", "Index", "Course")</li>
                     <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About", "Index", "About")</li>
+                    <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
                 </ul>
             </div>
         </div>
@@ -34,7 +36,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Study Helper</p>
+            <p style="background-color:azure"> &copy; @DateTime.Now.Year - Study Helper</p>
         </footer>
     </div>
 

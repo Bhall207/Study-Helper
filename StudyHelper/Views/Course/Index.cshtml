@@ -1,4 +1,4 @@
-﻿@model IEnumerable<StudyHelper.WebUI.Models.Course>
+﻿@model StudyHelper.WebUI.Models.Course
 
 @{
     ViewBag.Title = "Index";
@@ -29,9 +29,9 @@
             @Html.DisplayFor(modelItem => item.CourseDescription)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CourseID }) |
+            @Html.ActionLink("Add", "Add", new { id=item.CourseID }) |
             @Html.ActionLink("Details", "Details", new { id=item.CourseID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CourseID })
+            @Html.ActionLink("Withdraw", "Withdraw", new { id=item.CourseID })
         </td>
     </tr>
 }

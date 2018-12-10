@@ -11,10 +11,19 @@ namespace StudyHelper.WebUI.Context
 {
     public class CourseContext : DbContext
     {
-       
+        public CourseContext() : base("CourseContext")
+        {
+
+        }
        public DbSet<Course> Courses { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
+
     }
 
-    
+
 
 }
