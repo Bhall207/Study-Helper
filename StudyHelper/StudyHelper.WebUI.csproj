@@ -137,7 +137,9 @@
     <Compile Include="Context\CourseContext.cs" />
     <Compile Include="Context\CourseInitializer.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\CreateAccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +156,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\kid-Studying-.jpg" />
+    <Content Include="Images\studentslearning.jpg" />
+    <Content Include="Images\studentslearning2.jpg" />
     <Content Include="Images\studyhelperbackground.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -187,6 +192,8 @@
     <Content Include="Views\Course\Details.cshtml" />
     <Content Include="Views\Course\Edit.cshtml" />
     <Content Include="Views\Course\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Create Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
